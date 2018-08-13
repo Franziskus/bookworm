@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="websocket.js"></script>
+        
+        <style type="text/css">
+        	
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    background-color: #1f1f1f;
+}
+
+#wrapper {
+    width: 960px;
+    margin: auto;
+    text-align: left;
+    color: #d9d9d9;
+}
+
+p {
+    text-align: left;
+}
+
+.button {
+    display: inline;
+    color: #fff;
+    background-color: #f2791d;
+    padding: 8px;
+    margin: auto;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    box-shadow: none;
+    border: none;
+}
+
+.button:hover {
+    background-color: #ffb15e;
+}
+.button a, a:visited, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+#addDevice {
+    text-align: center;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#addDeviceForm {
+    text-align: left;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+#addDeviceForm span {
+    display: block;
+}
+
+#content {
+    margin: auto;
+    width: 340px;
+}
+
+.device {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 16px;
+    color: #fff;
+    vertical-align: top;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    display: inline-block;
+}
+
+.device.off {
+    background-color: #c8cccf;
+}
+
+.device span {
+    display: block;
+}
+
+.deviceName {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.removeDevice {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.device.DONE {
+    background-color: #5eb85e;
+}
+
+.device.DONE a:hover {
+    color: #a1ed82;
+}
+
+.device.PROCESSING {   
+    background-color: #0f90d1;
+}
+
+.device.PROCESSING a:hover {
+    color: #4badd1;
+}
+
+.device.FOUND {
+    background-color: #c2a00c;
+}
+
+.device.FOUND a:hover {
+    color: #fad232;
+}
+
+.device.NONE {
+    background-color: #db524d;
+}
+
+.device.NONE a:hover {
+    color: #ff907d;
+}
+
+.device a {
+    text-decoration: none;
+}
+
+.device a:visited, a:active, a:hover {
+    color: #fff;
+}
+
+.device a:hover {
+    text-decoration: underline;
+}
+        </style>
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <h1>Java Websocket Home</h1>
+            <p>Welcome to the Java WebSocket Home. Click the Add a device button to start adding devices.</p>
+            <br />
+            <div id="content">
+            </div>
+        </div>
+
+    </body>
+</html>

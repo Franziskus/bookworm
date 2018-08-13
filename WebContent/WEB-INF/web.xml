@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+        <param-name>db.driverName</param-name>
+        <param-value>org.apache.derby.jdbc.EmbeddedDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.url</param-name>
+        <param-value>jdbc:derby:D:\\derbyTest\\derbyTest.de;create=true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.home</param-name>
+        <param-value>D:\\derbyTest</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.user</param-name>
+        <param-value>App</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.password</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.tables.redeploy</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>file.folder</param-name>
+        <param-value>D:\Files</param-value>
+    </context-param>
+    <context-param>
+        <param-name>file.sleep</param-name>
+        <param-value>6000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>tika.tesseract.path</param-name>
+        <param-value>D:\Program Files (x86)\Tesseract-OCR</param-value>
+    </context-param>
+    <context-param>
+        <param-name>tika.tessdata.path</param-name>
+        <param-value>D:\Program Files (x86)\Tesseract-OCR\tessdata</param-value>
+    </context-param>
+    <context-param>
+        <param-name>tika.imageMagick.path</param-name>
+        <param-value>C:\Program Files\ImageMagick-7.0.8-Q16</param-value>
+    </context-param>
+    <context-param>
+        <param-name>tika.languages</param-name>
+        <param-value>eng</param-value>
+    </context-param>
+        <context-param>
+        <param-name>tika.sleep</param-name>
+        <param-value>3000</param-value>
+    </context-param>
+</web-app>
