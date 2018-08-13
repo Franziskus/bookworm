@@ -5,12 +5,8 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 id="WebApp_ID" version="2.5">
   <display-name>Archetype Created Web Application</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
+    <welcome-file>webside.jsp</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <context-param>
         <param-name>db.driverName</param-name>
@@ -18,11 +14,11 @@ id="WebApp_ID" version="2.5">
     </context-param>
     <context-param>
         <param-name>db.url</param-name>
-        <param-value>jdbc:derby:D:\\derbyTest\\derbyTest.de;create=true</param-value>
+        <param-value>jdbc:derby:D:\derbyTest\derbyTest.de;create=true</param-value>
     </context-param>
     <context-param>
         <param-name>db.home</param-name>
-        <param-value>D:\\derbyTest</param-value>
+        <param-value>D:\derbyTest</param-value>
     </context-param>
     <context-param>
         <param-name>db.user</param-name>
